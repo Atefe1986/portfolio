@@ -71,6 +71,11 @@
     color: #11110f;
     margin-bottom: 15px;
   }
+
+  .highlight {
+    color: #d75c1e; 
+    font-weight: bold; 
+  }
   
   .hero p {
     font-size: 1.5rem;
@@ -89,7 +94,7 @@
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
+  } 
   
   .hero-buttons .btn:hover {
     background-color: #d75c1e;
@@ -98,7 +103,7 @@
   
     
   /* Projects Section */
-  .projects {
+  .projects, .about {
     padding: 40px 20px;
   }
   
@@ -137,32 +142,35 @@
     font-size: 1rem;
     color: #696962;
   }
+
+ 
   
   /* Contact Section */
-  .contact {
+  .email {
     text-align: center;
     padding: 40px 20px;
     background-color: #f1f1f1;
     border-top: #ddd solid;
   }
   
-  .contact h2 {
+  .email h2 {
+    color: #11110f;
     font-size: 2rem;
     margin-bottom: 15px;
   }
   
-  .contact p {
+  .email p {
     font-size: 1rem;
     color: #696962;
   }
   
-  .contact a {
+  .email a {
     color: #d75c1e;
     text-decoration: none;
     font-weight: bold;
   }
   
-  .contact a:hover {
+  .email a:hover {
     text-decoration: underline;
   }
   
