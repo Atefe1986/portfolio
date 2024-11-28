@@ -81,7 +81,7 @@
   /* Hero Section */
   .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px;
     background-color: #f1f1f1;
     border-bottom: 1px solid #ddd;
   }
@@ -121,7 +121,24 @@
     color: #feedea;
   }
 
-  
+  .logo-container {
+    position: relative;
+    width: 150px;
+    height:150px;
+    margin:50px auto 0 auto;
+  }
+
+  .circle-text {
+    position: absolute;
+    top: 0px;
+    left: 0;
+  }
+
+  .circle-logo {
+    position: absolute;
+    top: 0px;
+    left: 0;
+  }
   
  
     
