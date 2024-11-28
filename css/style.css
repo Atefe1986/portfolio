@@ -6,7 +6,7 @@
   }
   
   body, html {
-    font-family: "Montserrat" "Ubuntu" sans-serif;
+    font-family: "Arial" sans-serif;
     color: #11110f;
     background-color: #f1f1f1;
     line-height: 1.6;
@@ -16,6 +16,11 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+  }
+
+  main {
+    padding-top: 120px;
+  
   }
   
  
@@ -32,6 +37,20 @@
     align-items: center;
   }
   
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #dbdbcd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  main {
+    padding-top: 120px; /* ارتفاع هدر */
+  }
+  
   .logo img {
     height: 100px;
   }
@@ -45,6 +64,7 @@
     padding: 0;
     margin: 0;
   }
+
   
   .nav-links a {
     text-decoration: none;
@@ -100,14 +120,25 @@
     background-color: #d75c1e;
     color: #feedea;
   }
+
   
+  
+ 
     
   /* Projects Section */
-  .projects, .about {
+   .about {
     padding: 40px 20px;
   }
+
+  .projects {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 40px 20px;
+
+  }
   
-  .projects h2 {
+  .projects h2, .projects h1 {
+    flex: 100%;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 50px;
@@ -120,12 +151,14 @@
   
   .project img {
     width: 100%;
-    max-width: 200px;
+    max-width:250px;
     border-radius: 5px;
     margin-bottom: 10px;
     transition: transform 0.3s ease;
   }
-  
+
+
+      
   .project img:hover {
     transform: scale(1.2);
   }
@@ -141,6 +174,18 @@
     text-align: center;
     font-size: 1rem;
     color: #696962;
+  }
+
+  .project a {
+    text-decoration: none;
+    color: #d75c1e;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .project a:hover {
+    color: #11110f ;
   }
 
  
@@ -199,8 +244,74 @@
     color: #696962;
   }
 
+
+
+  .contact-form {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: #f1f1f1;
+    padding: 5rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .contact-form p {
+    margin-bottom: 2rem;
+    color: #11110f;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d75c1e;
+    border-radius: 5px;
+    font-size: 1rem;
+  
+  }
+  
+  .form-group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 1px solid #d75c1e;
+    color: #d75c1e;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  } 
+  
+  .submit-btn:hover {
+    background-color: #d75c1e;
+    color: #feedea;
+  }
+
  
-  @media (min-width: 768px) {
+  @media (min-width: 990px) {
     .header {
       flex-direction: row;
       justify-content: space-between;
@@ -217,12 +328,16 @@
   .projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-between;
    
   }
 
   .project {
     flex: 1 1 200px;
+  }
+
+  .project img{
+    width: 60%;
   }
 
   footer {
