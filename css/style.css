@@ -6,7 +6,7 @@
   }
   
   body, html {
-    font-family: "Montserrat" "Ubuntu" sans-serif;
+    font-family: "Arial" sans-serif;
     color: #11110f;
     background-color: #f1f1f1;
     line-height: 1.6;
@@ -19,7 +19,8 @@
   }
 
   main {
-    padding: 0 10px;
+    padding-top: 120px;
+  
   }
   
  
@@ -34,6 +35,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #dbdbcd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  main {
+    padding-top: 120px; /* ارتفاع هدر */
   }
   
   .logo img {
@@ -105,7 +120,10 @@
     background-color: #d75c1e;
     color: #feedea;
   }
+
   
+  
+ 
     
   /* Projects Section */
    .about {
@@ -140,7 +158,7 @@
   }
 
 
-    
+      
   .project img:hover {
     transform: scale(1.2);
   }
@@ -156,6 +174,18 @@
     text-align: center;
     font-size: 1rem;
     color: #696962;
+  }
+
+  .project a {
+    text-decoration: none;
+    color: #d75c1e;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .project a:hover {
+    color: #11110f ;
   }
 
  
@@ -255,7 +285,7 @@
     border: 1px solid #d75c1e;
     border-radius: 5px;
     font-size: 1rem;
-    font-family: ubuntu, sans-serif;
+  
   }
   
   .form-group textarea {
