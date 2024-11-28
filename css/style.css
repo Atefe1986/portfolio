@@ -19,10 +19,10 @@
   }
 
   main {
-    padding-top: 120px;
-  
+    padding-top: 255px;
+
   }
-  
+ 
  
   header, footer {
 
@@ -42,17 +42,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
     background-color: #dbdbcd;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  main {
-    padding-top: 120px; /* ارتفاع هدر */
-  }
-  
+   
   .logo img {
-    height: 100px;
+    height: 40px;
   }
   
   .nav-links {
@@ -130,16 +127,27 @@
 
   .circle-text {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
+    transform-origin: center;
+    animation: rotate 15s linear infinite reverse;
   }
 
   .circle-logo {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
+    
   }
   
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
  
     
   /* Projects Section */
@@ -339,6 +347,11 @@
       flex-direction: row;
       justify-content: center;
       
+    }
+
+    main {
+      padding-top: 100px;
+  
     }
 
      
