@@ -75,7 +75,6 @@
     color: #d75c1e;
   }
   
-  /* Hero Section */
   .hero {
     text-align: center;
     padding: 40px 20px;
@@ -150,9 +149,21 @@
   }
  
     
-  /* Projects Section */
    .about {
+    text-align: center;
     padding: 40px 20px;
+    
+  }
+
+  .about img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .about h2 {
+    margin-bottom: 40px;
   }
 
   .projects {
